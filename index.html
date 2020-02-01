@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Intro to Node and MongoDB</title>
+    <title>Stock News</title>
 </head>
 
 <body>
-<h1>Into to Node and MongoDB</h1>
-<form method="post" action="/addtradingnews">
-    <label>Enter Your Name</label><br>
-    <input type="text" name="tradingSymbol" placeholder="Enter tradingSymbol..." required>
+<script src="tradingsymbol-fe.js"></script>
+<div id="div1">
+<h1>Get Stock News Info</h1>
 
-    <input type="submit" value="Add into DB">
+    <form>
+    <label for="tradingsymbol">Enter trading symbol: </label>
+    <input type="text" name="tradingsymbol" id="tradingsymbol">
+    <button onclick="sendRequest(); return false"> Get API Data</button>
 </form>
+</div>
+<div id="target">
+</div>
 </body>
+
 </html>
